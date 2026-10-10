@@ -229,6 +229,8 @@ footer :focus-visible{outline-color:#BFD0FF}
   <div class="wrap">
     <h2 id="projects-h" style="text-align:center;">Featured projects</h2>
 
+
+<!--    Crime vs. Perception dashboards Section-->
     <article class="lead" aria-labelledby="lead-h">
       <div class="shots">
         <a class="shot ph p1" href="https://eboniethomas16.github.io/Crime-Perception-Headlines-Visual-Dashboard/pages/index_dashboard_perception_crime.html" target="_blank" rel="noopener" aria-label="Open dashboard: Crime vs. Perception"><img src="https://cdn.jsdelivr.net/gh/eboniethomas16/Crime-Perception-Headlines-Visual-Dashboard@main/dashboard_survey/photos/d1_dashboard_v2.png" alt="" loading="lazy"><span>Crime vs. Perception dashboard</span></a>
@@ -258,9 +260,72 @@ footer :focus-visible{outline-color:#BFD0FF}
           <li>Python</li>
           <li>HTML</li>
           <li>CSS</li>
+          <li>SQL</li>
         </ul>
         <div class="links">
           <a href="https://github.com/eboniethomas16/Crime-Perception-Headlines-Visual-Dashboard"
+             target="_blank"
+             rel="noopener">View Source Code on GitHub</a>
+        </div>
+      </div>
+    </article>
+
+    <!--SMS SPAM Detection Section-->
+    <article class="lead" aria-labelledby="p3-h">
+      <a class="shot ph p3"
+         href="https://github.com/eboniethomas16/SMS-Spam-Detection/blob/main/HAM%20vs%20SPAM%20NLP%20Classification.ipynb"
+         target="_blank"
+         rel="noopener"
+         aria-label="Open GITHUB: SMS SPAM Detection">
+
+<!--        <img src="https://github.com/eboniethomas16/Marketing-Campaign-Analysis/blob/main/Campaign%20Analysis%20Overview%20Tableau%20screenshot.png?raw=true"-->
+<!--             alt="SMS Spam Detection"-->
+<!--             loading="lazy">-->
+
+        <span>SMS Spam Detection</span>
+      </a>
+
+      <div class="lead-body">
+        <h3 id="p3-h" style="text-align:center;">HAM vs SPAM: SMS Spam Detection - Machine Learning Project </h3>
+
+        <p style="margin-bottom:0;">A machine learning project that classifies SMS messages as legitimate (ham) or spam,
+          with a focus on keeping false positives low so real messages are not lost. Using the SMS Spam Collection (5,572 labelled messages),
+          I engineered content-based features, searched hundreds of thousands of feature combinations,
+          and benchmarked seven classifiers before and after refinement.</p>
+<!--        <ul style="margin-top:0;">-->
+<!--          <li>Each page focuses on a different online advertising pricing model-->
+<!--            <b>(CPC, CPL, ROAS, etc.)</b></li>-->
+<!--          <li>Metric comparisons based on selected channels:-->
+<!--            <b>(Affiliate, Display, Paid Search, Paid Social, & Video )</b></li>-->
+<!--          <li>Time‑series trends for key metrics based on selected channels-->
+<!--            <b>(spend, revenue, clicks, conversions, impressions, and leads)</b></li>-->
+<!--          <li>Campaign‑level breakdowns with bar charts showing performance across multiple channels</li>-->
+<!--        </ul>-->
+        <h4 class="achievements-title">Technical Achievements</h4>
+        <ul class="achievements">
+          <li><strong>Cut false positives by 67%.</strong> Reduced legitimate messages wrongly flagged as spam from 127 to 42 on the held-out test set while also improving recall.</li>
+          <li><strong>Engineered 19 candidate features</strong> from raw text, including regex-based detectors for URLs, currency symbols, phone numbers and short codes, plus length-normalised ratios that stop long messages being flagged simply for being long.</li>
+          <li><strong>Built a multithreaded feature-subset search</strong> that evaluates all unique combinations of 19 features (524,287 subsets) with Multinomial Naive Bayes. It runs in memory-safe batches and ranks results by fewest false positives subject to a minimum recall constraint, so a “predict everything as ham” model cannot win.</li>
+          <li><strong>Prevented data leakage.</strong> Oversampled only after splitting, kept the validation set at its natural ham/spam ratio so false-positive counts stayed realistic, and used the test set once for the final evaluation.</li>
+          <li><strong>Benchmarked seven classifiers</strong> before and after feature refinement, reporting per-model deltas and translating precision gains into false-positive counts that are easy to interpret.</li>
+          <li><strong>Diagnosed model behaviour.</strong> Explained why Gaussian Naive Bayes improved most (correlated features had violated its independence assumption) and why the single Decision Tree regressed while the Random Forest on the same features improved.</li>
+        </ul>
+
+        <ul class="badges">
+          <li>Scikit-Learn</li>
+          <li>NLTK</li>
+          <li>Python</li>
+          <li>Pandas</li>
+          <li>NumPy</li>
+          <li>TextBlob</li>
+          <li>regex</li>
+          <li>concurrent.futures</li>
+          <li>tqdm</li>
+
+        </ul>
+
+        <div class="links">
+          <a href="https://github.com/eboniethomas16/Marketing-Campaign-Analysis"
              target="_blank"
              rel="noopener">View Source Code on GitHub</a>
         </div>
@@ -276,10 +341,10 @@ footer :focus-visible{outline-color:#BFD0FF}
          aria-label="Open dashboard: Marketing Campaign Analysis">
 
         <img src="https://github.com/eboniethomas16/Marketing-Campaign-Analysis/blob/main/Campaign%20Analysis%20Overview%20Tableau%20screenshot.png?raw=true"
-             alt="Marketing Campaign Analysis Tableau Dashboard Screenshot"
+             alt="Marketing Campaign Analysis Tableau Tableau Dashboard"
              loading="lazy">
 
-        <span>Marketing Campaign Analysis dashboard</span>
+        <span>Marketing Campaign Analysis Tableau Dashboard</span>
       </a>
 
       <div class="lead-body">

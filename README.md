@@ -29,17 +29,59 @@ This portfolio is designed as a clean, interactive space where recruiters, hirin
 
 ## **Featured Projects**
 
-### **Crime, Perception & Media Analytics (MSc Dissertation)**
-Custom D3.js dashboards integrating crime statistics, perception surveys, and millions of media records to explore how news coverage shapes public sentiment.
+### [**Crime, Perception & Media Visual Analytics**](https://github.com/eboniethomas16/Crime-Perception-Headlines-Visual-Dashboard)
+**MSc Dissertation | Multimodal Data Analysis & Visual Analytics**
 
-### **Marketing Campaign Analysis**
-Tableau dashboard using sample marketing data that focuses on various marketing pricing models (CPC, CPL, ROAS, etc.) as well as Metric comparisons based on selected channels: (Affiliate, Display, Paid Search, Paid Social, & Video ) 
+Developed a modular Python and NLP pipeline to integrate millions of GDELT crime-media records with Metropolitan Police crime statistics and MOPAC public-perception survey data. Applied simple and multiple linear regression to compare observed and predicted perceptions of crime across London boroughs, then built an interactive D3.js dashboard combining geospatial maps, heatmaps, and time-series visualizations.
 
-### **Climate Risk & Canopy Cover Dashboard**
-Tableau Spatial analysis of heat and flood vulnerability across London boroughs.
+**Technologies:** Python, SQL, NLP, D3.js, HTML/CSS, regression analysis, ETL, geospatial visualization
 
-### **SMS Spam Detection Analysis**
-A text classifier that labels SMS messages as spam or not spam using NLP techniques. Analyses which metrics are best used to filter SPAM messages while reducing the number of false positives (Real messages mistakenly labeled as SPAM)
+---
+
+### [**Mall Customer Segmentation Analysis**](https://github.com/eboniethomas16/Elizabeth-Thomas-Portfolio/tree/main/Mall%20Customer%20Segmentation%20Data)
+**Unsupervised Machine Learning | Customer Analytics**
+
+Applied K-means clustering to customer age, annual income, spending score, and gender data to identify distinct customer segments. Used exploratory analysis and interactive 3D Plotly visualizations to compare cluster characteristics, examine gender-based patterns, and translate model outputs into actionable customer profiles for targeted marketing.
+
+**Technologies:** Python, Pandas, NumPy, Scikit-learn, K-means clustering, Plotly, exploratory data analysis
+
+---
+
+### [**GLUE MRPC Transformer Fine-Tuning Model**](https://github.com/eboniethomas16/Elizabeth-Thomas-Portfolio/tree/main/GLUE%20MRPC%20Transformer%20Fine-Tuning%20Model)
+**Transformer-Based NLP | Semantic Text Classification**
+
+Fine-tuned a pretrained transformer on the Microsoft Research Paraphrase Corpus to determine whether pairs of sentences convey equivalent meanings. Built the tokenization, training, validation, and evaluation workflow using Hugging Face and PyTorch, tracking training loss, validation loss, accuracy, and F1 across multiple epochs.
+
+**Technologies:** Python, PyTorch, Hugging Face Transformers, Accelerate, NLP tokenization, model fine-tuning
+
+---
+
+### [**SMS Spam Detection Model**](https://github.com/eboniethomas16/SMS-Spam-Detection)
+**Natural Language Processing | Binary Text Classification**
+
+Developed an end-to-end text-classification workflow to distinguish spam messages from legitimate SMS communications. Performed text preprocessing and feature engineering, trained and compared classification models, and evaluated precision, recall, F1, and false-positive performance to prioritize the reliable identification of genuine messages.
+
+**Technologies:** Python, Pandas, Scikit-learn, NLP, text preprocessing, feature engineering, classification
+
+---
+
+## **Additional Data Analysis & Visualization Projects**
+
+### [**Marketing Campaign Performance Dashboard**](https://github.com/eboniethomas16/Marketing-Campaign-Analysis)
+**Tableau | Marketing Analytics**
+
+Built an interactive Tableau dashboard to evaluate campaign performance using CPC, CPL, ROAS, conversion volume, and channel-efficiency metrics. Designed KPI views and filters that enable comparisons across Affiliate, Display, Paid Search, Paid Social, and Video campaigns, helping users identify efficient acquisition channels and areas of underperformance.
+
+**Technologies:** Tableau, marketing analytics, KPI design, data cleaning, calculated fields, visual storytelling
+
+---
+
+### [**London Canopy Cover, Flood Risk & Heat Risk Analysis**](https://github.com/eboniethomas16/Canopy-Coverage-Risks)
+**Tableau | Geospatial and Environmental Analytics**
+
+Integrated multi-year canopy coverage, property flood-risk, and building heat-risk datasets across London boroughs and wards. Cleaned and reconciled geographic fields in Excel, then created Tableau maps and comparative visualizations to investigate spatial relationships between tree coverage, flood exposure, and heat vulnerability.
+
+**Technologies:** Tableau, Excel, data integration, geospatial analysis, calculated fields, regression analysis
 
 ---
 
